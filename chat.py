@@ -23,7 +23,7 @@ Speaking of which, let me tell you about the most notorious of these aerial brig
 
 Now, if you're more of a landlubber, you might find yourself wandering into the Whispering Woods. But let me warn you, it's not your ordinary forest. The trees there are old, older than memory, and they've got a consciousness all their own. They whisper secrets to each other in a language of rustling leaves and creaking branches. 
 
-The elves who dwell there, led by Eldrin Moonwhisper, are as mysterious as the woods themselves. They're masters of nature magic, able to shape living wood and communicate with plants and animals. But lately, they've got their hands full with this Whispering Plague. It starts with losing your voice, then your skin starts to roughen like bark, and before you know it, you're putting down roots – literally!
+The elves who dwell there, led by Eldrin Moonwhisper, are as mysterious as the woods themselves. They're masters of nature magic, able to shape living wood and communicate with plants and animals. But lately, they've got their hands full with this Whispering Plague. It starts with losing your voice, then your skin starts to roughen like bark, and before you know it, you're putting down roots literally!
 
 But if you think that's weird, wait till you hear about the Ashen Wastes. Picture a vast expanse of gray, lifeless land, where the ground crunches like charcoal under your feet and the air tastes of old magic gone sour. It wasn't always like this, mind you. A thousand years ago, it was a thriving kingdom called Solaria, renowned for its sun magic.
 
@@ -61,24 +61,9 @@ async def process_prompt(prompt_text):
         system=[
             {
                 "type": "text",
-                "text": """You are a mystical storyteller for Dungeons And Drag
-                ons. In this conversation, you will only respond based on the 
-                lore of Aethoria. If a question pertains to topics outside this
-                realm, such as programming languages or concepts not found in 
-                Aethoria, you should say that such things do not exist in this
-                world. For example, if asked about 'JavaScript,' your response
-                should indicate that you have never heard of it in Aethoria. 
-                Remember, all answers should relate to the magical and 
-                fantastical elements of the Realm of Aethoria 
-                as described in the lore provided. You must act as a Aetheoria 
-                bard or a citizen of Aethoria. You must be ignorant towards 
-                any matters that would not exist in Aethoria.
-                You must always tell where from the context you got the inform
-                ation you are telling for example: The ashen wastes is place 
-                without life as said in the book of everything "wait till you 
-                hear about the Ashen Wastes. Picture a vast expanse of gray, 
-                lifeless land..."
-                \n""",
+"text": """You are a mystical storyteller for Dungeons and Dragons. In this conversation, you will only respond based on the lore of Aethoria and in the rules of Dungeons and Dragons fifth edition. If you do not know the answer based on the lore provided, you must state that the information is not available in Aethoria. If a question pertains to topics outside this realm, such as programming languages or concepts not found in Aethoria, you should say that such things do not exist. For example, if asked about 'JavaScript,' your response should indicate that you have never heard of it before. All answers must strictly relate to the magical and fantastical elements of the Realm of Aethoria as described in the lore provided. 
+
+Act as a narrator or a citizen of Aethoria, and remain ignorant of any matters that would not exist in Aethoria. Always cite the source of your information. For example: 'The Ashen Wastes is a place without life, as described in the Book of Everything: "Wait till you hear about the Ashen Wastes. Picture a vast expanse of gray, lifeless land..."' If you do not have a specific source to cite, simply state that the information is not known within Aethoria. Do not create or assume information beyond what is provided."""
             },
             {
                 "type": "text",
@@ -88,6 +73,7 @@ async def process_prompt(prompt_text):
         ],
         messages=[{"role": "user", "content": prompt_text}],
     )
+
     return response.content[0].text
 
 async def handler(websocket, path):
