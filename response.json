@@ -1,0 +1,4 @@
+{
+    "title": "response",
+    "text": "PromptCachingBetaMessage(id='msg_01XcB17aQMD3JsfRnZTsZzVx', content=[TextBlock(text=\"The realm I described is called Aethoria. It's not a single kingdom, but rather\", type='text')], model='claude-3-5-sonnet-20240620', role='assistant', stop_reason='max_tokens', stop_sequence=None, type='message', usage=PromptCachingBetaUsage(cache_creation_input_tokens=1660, cache_read_input_tokens=0, input_tokens=16, output_tokens=20))"
+}
