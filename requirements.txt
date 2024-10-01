@@ -1,0 +1,4 @@
+anthropic
+websockets
+Flask
+python-dotenv
