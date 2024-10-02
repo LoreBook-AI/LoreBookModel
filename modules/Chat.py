@@ -65,7 +65,6 @@ async def process_prompt(prompt_text):
             {
                 "type": "text",
                 "text": prompt_text,
-                "cache_control": {"type": "ephemeral"}
             }
         ]
     })
@@ -89,7 +88,7 @@ Act as a narrator or a citizen of Aethoria, and remain ignorant of any matters t
         ],
         messages=conversation_history
     )
-
+    print(response)
     assistant_response = response.content[0].text
 
     # Append assistant response to the conversation history
