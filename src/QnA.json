@@ -1,0 +1,65 @@
+{
+    "character_creation_questions": [
+      {
+        "question": "What kind of race do you want?",
+        "example_answer": "I want a small and cute race"
+      },
+      {
+        "question": "What class are you interested in?",
+        "example_answer": "I want a class that is good at magic"
+      },
+      {
+        "question": "What background do you prefer?",
+        "example_answer": "I want a background that involves adventure and exploration"
+      },
+      {
+        "question": "What alignment do you envision for your character?",
+        "example_answer": "I want my character to be chaotic and free-spirited"
+      },
+      {
+        "question": "What personality traits do you want your character to have?",
+        "example_answer": "I want my character to be friendly and curious"
+      },
+      {
+        "question": "What physical appearance do you imagine for your character?",
+        "example_answer": "I want my character to be tall with bright red hair"
+      },
+      {
+        "question": "What kind of backstory do you have in mind?",
+        "example_answer": "I want a backstory involving a lost family heirloom"
+      },
+      {
+        "question": "What are your character's goals or motivations?",
+        "example_answer": "I want my character to seek revenge for a past wrong"
+      },
+      {
+        "question": "What kind of relationships does your character have?",
+        "example_answer": "I want my character to have a loyal companion"
+      },
+      {
+        "question": "What special abilities or skills do you want your character to possess?",
+        "example_answer": "I want my character to be skilled in archery"
+      },
+      {
+        "question": "What is your character's name?",
+        "example_answer": "I want my character to be named Elara"
+      },
+      {
+        "question": "What are your character's ability scores?",
+        "example_answer": "I want high Dexterity and Charisma"
+      },
+      {
+        "question": "What type of weapon do you prefer?",
+        "example_answer": "I want a bow and arrows"
+      },
+      {
+        "question": "What is a personal flaw of your character?",
+        "example_answer": "My character is overly trusting"
+      },
+      {
+        "question": "Does your character have any strong bonds with others?",
+        "example_answer": "My character has a mentor they look up to"
+      }
+    ]
+  }
+  
