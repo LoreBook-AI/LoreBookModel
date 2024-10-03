@@ -110,7 +110,7 @@
             const responseDiv = document.getElementById('new-chat-response');
             responseDiv.innerHTML = '';
 
-            const socket = new WebSocket('ws://localhost:8766'); // Adjust if a different port is needed
+            const socket = new WebSocket('ws://localhost:8767'); // Adjust if a different port is needed
             socket.onopen = () => {
                 socket.send(promptText);
             };

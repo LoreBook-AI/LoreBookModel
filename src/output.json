@@ -1,0 +1,42 @@
+{
+  "Character": {
+    "name": "Character Name",
+    "alignment": "alignment",
+    "background": [
+        {
+          "sugestion1": "background sugestion1"
+        },
+        {
+          "sugestion2": "background sugestion1"
+        }
+      ],
+    "proficiencies": {
+      "others": ["Archery", "Magic"]
+    }
+  },
+  "Bard": {
+    "skill": "Archery",
+    "multiClass": false,
+    "cantripsKnown": 2,
+    "spellsKnown": 4,
+    "spellSlots": [2, 0, 0, 0, 0, 0, 0, 0, 0],
+    "bardicInspirationDie": 6
+  },
+  "Lore": {},
+  "Valor": {},
+  "Spells": {
+    "spellName": "",
+    "spellEffect": "",
+    "multiClass": false
+  },
+  "Flaws": [
+    "Overly trusting"
+  ],
+  "Bonds": [
+    "Mentor"
+  ],
+  "Goals": [
+    "Seek revenge for a past wrong",
+    "Recover lost family heirloom"
+  ]
+}
