@@ -1,42 +1,33 @@
 {
-  "Character": {
+  "character sugestion1": {
+    "explanation": "explain here why you choose the following sugestions, and make a small brief of the character, no more than 4 sentences.",
     "name": "Character Name",
     "alignment": "alignment",
-    "background": [
-        {
-          "sugestion1": "background sugestion1"
-        },
-        {
-          "sugestion2": "background sugestion1"
-        }
-      ],
+    "class": "Class sugestion1",
+    "subclass": "Subclass sugestion1",
+    "race": "race sugestion1",
+    "subrace": "subrace sugestion1",
+    "background": "background sugestion1",
+    "skills": {
+      "sugestionN": "Skills sugestionN"
+    },
     "proficiencies": {
-      "others": ["Archery", "Magic"]
-    }
-  },
-  "Bard": {
-    "skill": "Archery",
-    "multiClass": false,
-    "cantripsKnown": 2,
-    "spellsKnown": 4,
-    "spellSlots": [2, 0, 0, 0, 0, 0, 0, 0, 0],
-    "bardicInspirationDie": 6
-  },
-  "Lore": {},
-  "Valor": {},
-  "Spells": {
-    "spellName": "",
-    "spellEffect": "",
-    "multiClass": false
-  },
-  "Flaws": [
-    "Overly trusting"
-  ],
-  "Bonds": [
-    "Mentor"
-  ],
-  "Goals": [
-    "Seek revenge for a past wrong",
-    "Recover lost family heirloom"
-  ]
+      "sugestionN": "Skills sugestionN"
+    },
+    "languages": {
+      "sugestionN": "Skills sugestionN"
+    },
+    "spells": {
+      "sugestionN": "spells sugestionN"
+    },
+    "items": {
+      "sugestionN": "items sugestionN"
+    },
+    "character Lore": "detais about the lore",
+    "personality trais": "description of the personality",
+    "bonds": "description of bonds",
+    "goals": "description of goals",
+    "flaw": "description of flaw",
+    "description": "description of appearance"
+  }
 }
