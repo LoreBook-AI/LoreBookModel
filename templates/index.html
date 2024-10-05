@@ -38,86 +38,20 @@
             border: 1px solid #bdc3c7;
             border-radius: 5px;
         }
-        .chat-container {
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
     <h1>D&D Prompt Client</h1>
-    
-    <div class="chat-container">
-        <h2>Single Question</h2>
-        <form id="single-question-form">
-            <label for="single-prompt">Enter your prompt:</label><br>
-            <textarea id="single-prompt" required></textarea><br>
-            <button type="button" onclick="sendSinglePrompt()">Send</button>
-        </form>
-        <div id="single-response" class="response"></div>
-    </div>
-
-    <div class="chat-container">
-        <h2>Chat</h2>
-        <form id="chat-form">
-            <label for="chat-prompt">Enter your prompt:</label><br>
-            <textarea id="chat-prompt" required></textarea><br>
-            <button type="button" onclick="sendChatPrompt()">Send</button>
-        </form>
-        <div id="chat-response" class="response"></div>
-    </div>
-
-    <div class="chat-container">
-        <h2>New WebSocket Chat</h2>
-        <form id="new-chat-form">
-            <label for="new-chat-prompt">Enter your prompt for new WebSocket:</label><br>
-            <textarea id="new-chat-prompt" required></textarea><br>
-            <button type="button" onclick="sendNewChatPrompt()">Send</button>
-        </form>
-        <div id="new-chat-response" class="response"></div>
-    </div>
-
-    <script>
-        async function sendSinglePrompt() {
-            const promptText = document.getElementById('single-prompt').value;
-            const responseDiv = document.getElementById('single-response');
-            responseDiv.innerHTML = '';
-
-            const socket = new WebSocket('ws://localhost:8765');
-            socket.onopen = () => {
-                socket.send(promptText);
-            };
-            socket.onmessage = (event) => {
-                responseDiv.innerHTML = `<p>${event.data}</p>`;
-            };
-        }
-
-        async function sendChatPrompt() {
-            const promptText = document.getElementById('chat-prompt').value;
-            const responseDiv = document.getElementById('chat-response');
-            responseDiv.innerHTML = '';
-
-            const socket = new WebSocket('ws://localhost:8766');
-            socket.onopen = () => {
-                socket.send(promptText);
-            };
-            socket.onmessage = (event) => {
-                responseDiv.innerHTML += `<p>${event.data}</p>`;
-            };
-        }
-
-        async function sendNewChatPrompt() {
-            const promptText = document.getElementById('new-chat-prompt').value;
-            const responseDiv = document.getElementById('new-chat-response');
-            responseDiv.innerHTML = '';
-
-            const socket = new WebSocket('ws://localhost:8767'); // Adjust if a different port is needed
-            socket.onopen = () => {
-                socket.send(promptText);
-            };
-            socket.onmessage = (event) => {
-                responseDiv.innerHTML += `<p>${event.data}</p>`;
-            };
-        }
-    </script>
+    <form method="POST">
+        <label for="prompt">Enter your prompt:</label><br>
+        <textarea name="prompt" id="prompt" required>{{ prompt }}</textarea><br>
+        <button type="submit">Send</button>
+    </form>
+    {% if response %}
+        <div class="response">
+            <h2>Response:</h2>
+            <p>{{ response }}</p>
+        </div>
+    {% endif %}
 </body>
 </html>
