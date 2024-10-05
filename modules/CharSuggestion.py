@@ -125,7 +125,7 @@ Each of the topics in "new elements" can have many records. for example:
                 ]
 
             ]
-
+ 
 Following there will be the output model:
 
 OUTPUT JSON EXAMPLE:
@@ -206,9 +206,7 @@ on the player input. Ensure that the output generated is in the structure of the
 input while fitting within the context of the BOOK OF EVERYTHING. 
 
 YOU MUST NOT SAY ANYTHING; the output must be ONLY and nothing more than the JSON.
-""",
-
-"cache_control": {"type": "ephemeral"},
+"""
             },
             {
                 "type": "text",
